@@ -1,3 +1,72 @@
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav header {
+    padding: 6px 8px 6px 16px;
+    text-decoration: underline;
+    font-size: 35px;
+    color: #ffec02;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ff0000;
+}
+
+.main {
+    margin-left: 185px;
+    padding: 0px 10px;
+    background-color: #cfe969;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.code {
+    border-style: solid;
+    border-radius: 0%;
+    border-width: 5px;
+    border-color: #353535;
+    background-color: #252525;
+    color: #FFFFFF;
+    max-height: 105px;
+    max-width: 605px;
+    padding: 5px 5px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.exc {
+    max-height: 100px;
+    max-width: 100px;
+    z-index: 2;
 }
 
 img {
