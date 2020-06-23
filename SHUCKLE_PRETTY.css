@@ -1,3 +1,40 @@
+/*Fonts*/
+
+
+/*font-family: 'Archivo Narrow', sans-serif;*/
+
+
+/*font-family: 'Lato', sans-serif;*/
+
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+/*font-family: 'Staatliches', cursive;*/
+
+
+/*Elements*/
+
+h1 {
+    font-family: 'Staatliches', cursive;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+    text-align: left;
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+hr {
+    color: #ff0000;
+    width: 100%;
+}
+
+
 /*--Classes--*/
 
 .main {
@@ -20,36 +57,18 @@
 }
 
 
-/* Codeboxes */
-
-.code {
-    border-style: solid;
-    border-radius: 0%;
-    border-width: 5px;
-    border-color: #353535;
-    background-color: #252525;
-    color: #FFFFFF;
-    max-height: 105px;
-    max-width: 605px;
-    padding: 5px 5px 5px 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-
 /*Hyperlink colors*/
 
-a:hover {
+.hov {
     color: #ffed09;
 }
 
 a {
-    color: #ec0006;
+    color: #790003;
 }
 
 a:visited {
-    color: #ec0006;
+    color: #480002;
 }
 
 
@@ -76,28 +95,21 @@ a:visited {
 }
 
 
-/*For resizing in-document images for use as icons*/
+/*Stat section div adjustment and coloration*/
 
-.iconimg {
-    max-height: 50px;
-    max-width: 50px;
-    background-color: transparent;
-    border-style: none;
-    border-width: 0px;
-    border-radius: 0%;
-}
-
-
-/*Elements*/
-
-h2 {
-    text-align: left;
-    font-size: 40px;
-    text-decoration: underline;
-}
-
-h4 {
-    font-size: 18px;
+.divpadstat {
+    padding: 1px 1px 1px 1px;
+    background-color: #f9cc64;
+    margin: 2px 0 2px 0;
+    border-style: double;
+    border-width: 1px;
+    border-color: #bd9404;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000000;
 }
 
 
@@ -118,6 +130,7 @@ h4 {
     border-right: solid;
     border-color: red;
     border-width: 1px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .lastcol {
@@ -130,7 +143,7 @@ h4 {
     border-bottom: solid;
     border-color: #395506;
     border-width: 1px;
-    width: 50%;
+    width: 40%;
 }
 
 .active {
@@ -162,7 +175,7 @@ h4 {
     padding: 0px 18px 0px 0;
     margin: -1px 0 0 0;
     max-height: 0;
-    width: 15%;
+    width: 35%;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
     background-color: #80bc0e;
@@ -172,6 +185,41 @@ h4 {
     border-left: solid;
     border-width: 1px;
     color: #395506;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.content2 {
+    padding: 0px 18px 0px 0;
+    margin: -1px 0 0 0;
+    max-height: 0;
+    width: 48.2%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    background-color: #80bc0e;
+    color: #2d2d2d;
+    font-size: 18px;
+    border-right: solid;
+    border-left: solid;
+    border-width: 1px;
+    color: #395506;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.content3 {
+    padding: 0px 18px 0px 4px;
+    margin: -1px 0 0 0;
+    max-height: 0;
+    width: 30%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    background-color: #80bc0e;
+    color: #2d2d2d;
+    font-size: 18px;
+    border-right: solid;
+    border-left: solid;
+    border-width: 1px;
+    color: #395506;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -236,6 +284,27 @@ h4 {
     border-radius: 10%;
 }
 
+.bioimg {
+    max-height: 250px;
+    max-width: 250px;
+    display: block;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: auto;
+    float: right;
+    height: 150px;
+    width: auto;
+    background-color: transparent;
+    border-color: #d5c720;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10%;
+    position: static;
+    overflow: hidden;
+    bottom: 85px;
+    z-index: 0;
+}
+
 
 /*Flipcard stuff*/
 
@@ -252,7 +321,7 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     float: left;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
 }
 
@@ -273,7 +342,7 @@ h4 {
     background-color: transparent;
     width: 300px;
     height: 300px;
-    perspective: 2000px;
+    perspective: 3000px;
     padding: 100px -200px -100px -400px;
     margin: -100px 50px -75px -100px;
 }
@@ -308,6 +377,7 @@ h4 {
     background-color: #cfe969;
     transform: rotateY(180deg);
     overflow: hidden;
+    bottom: 2px;
 }
 
 .flip-card-front:hover {
@@ -316,4 +386,146 @@ h4 {
 
 .flip-card-back:hover {
     background-color: transparent;
+}
+
+
+/*For resizing in-document images for use as icons*/
+
+.iconpad {
+    margin: 0 20px 0 20px;
+    padding: 2px;
+}
+
+.listdiv {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.iconimg {
+    max-height: 55px;
+    max-width: 55px;
+    background-color: #82ff04;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #316200;
+    border-radius: 50%;
+    position: static;
+    z-index: 3;
+}
+
+.listicon {
+    max-height: 30px;
+    max-width: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    padding: 1px;
+    float: left;
+}
+
+.waticon {
+    border-color: #014a63;
+    background-color: #12fce4;
+}
+
+.bugicon {
+    background-color: #82ff04;
+    border-color: #316200;
+}
+
+.rokicon {
+    background-color: #fdcf66;
+    border-color: #2b231c;
+}
+
+.figicon {
+    background-color: #ff7755;
+    border-color: #77001e;
+}
+
+.flyicon {
+    background-color: #70fef7;
+    border-color: #0268a6;
+}
+
+.groicon {
+    background-color: #eba921;
+    border-color: #2b231c;
+}
+
+.ghoicon {
+    background-color: #c281fe;
+    border-color: #0b0046;
+}
+
+.firicon {
+    background-color: #fcc60a;
+    border-color: #971300;
+}
+
+.graicon {
+    background-color: #27ff09;
+    border-color: #0b6600;
+}
+
+.eleicon {
+    background-color: #fffc91;
+    border-color: #818400;
+}
+
+.psyicon {
+    background-color: #ba82ff;
+    border-color: #c900d9;
+}
+
+.iceicon {
+    background-color: #c4fffc;
+    border-color: #00aeae;
+}
+
+.draicon {
+    background-color: #fc7801;
+    border-color: #6b3901;
+}
+
+.daricon {
+    background-color: #aeaeae;
+    border-color: #000000;
+}
+
+.faiicon {
+    background-color: #ffe6e6;
+    border-color: #f259ff;
+}
+
+.steicon {
+    background-color: #96adfe;
+    border-color: #233e70;
+}
+
+.noricon {
+    background-color: #ffffff;
+    border-color: #555555;
+}
+
+.poiicon {
+    background-color: #cfff11;
+    border-color: #680077;
+}
+
+td,
+tr,
+th {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    color: black;
+    font-size: 16px;
+    margin: 1px 1px 1px 1px;
+    padding: 4px 10px;
+}
+
+th {
+    background-color: 111;
+    color: limegreen;
 }
