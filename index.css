@@ -168,7 +168,7 @@ a:visited {
     color: #111;
     background-color: limegreen;
     font-weight: 600;
-    box-shadow: 2px -2px 1px rgb(21, 65, 21);
+    box-shadow: 2px -2px 1px #000;
     float: right;
     margin-left: 5px;
     transform: rotateX(180deg);
@@ -269,38 +269,42 @@ th {
     height: 100%;
     width: 192px;
     position: fixed;
+    margin-left: auto;
     z-index: 2;
     top: 0;
     left: 0;
+    box-shadow: 5px 5px 2.5px #111;
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
     border-right: #ff0000;
     border-style: solid;
     border-width: 2px;
+    float: left;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px 6px 125px;
+    margin-left: auto;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
+    position: inline;
+    float: right;
 }
 
 .sidenav a:hover {
-    color: #818181;
-    background-color: #252525;
-    border-width: 5px;
-    border-color: #404040;
-    border-style: ridge;
-    box-shadow: darkgray;
+    color: #888;
+    background-color: #222;
+    box-shadow: 5px 5px 2.5px #000;
+    float: right;
     transform: scale(110%);
-    margin: 5px 5% 5px 5%;
-    perspective: 1000px;
+    margin: 0 5% 0 5%;
     display: block;
-    transition: ease-in, .0s;
-    transform-style: center;
+    perspective: 0px;
+    transition: ease-in, .25s;
+    transform-style: preserve-3d;
 }
 
 .head {
@@ -309,6 +313,7 @@ th {
     color: limegreen;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 40px;
+    float: left;
 }
 
 
