@@ -15,11 +15,6 @@
     position: absolute;
 }
 
-.zdex {
-    z-index: 2;
-    position: relative;
-}
-
 .introdiv {
     padding: 0 0 0 -250px;
     margin: 0 0 0 250px;

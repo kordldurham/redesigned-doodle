@@ -1,6 +1,7 @@
 .iconpad {
-    margin: 0 20px 0 20px;
+    margin: 15px 15px 15px 15px;
     padding: 2px;
+    float: left;
 }
 
 .listdiv {
