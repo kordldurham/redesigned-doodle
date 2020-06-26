@@ -1,0 +1,121 @@
+.iconpad {
+    margin: 0 20px 0 20px;
+    padding: 2px;
+}
+
+.listdiv {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.iconimg {
+    max-height: 55px;
+    max-width: 55px;
+    background-color: #82ff04;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #316200;
+    border-radius: 50%;
+    position: static;
+    z-index: 3;
+}
+
+.listicon {
+    max-height: 30px;
+    max-width: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    padding: 1px;
+    float: left;
+}
+
+.waticon {
+    border-color: #014a63;
+    background-color: #12fce4;
+}
+
+.bugicon {
+    background-color: #82ff04;
+    border-color: #316200;
+}
+
+.rokicon {
+    background-color: #fdcf66;
+    border-color: #2b231c;
+}
+
+.figicon {
+    background-color: #ff7755;
+    border-color: #77001e;
+}
+
+.flyicon {
+    background-color: #70fef7;
+    border-color: #0268a6;
+}
+
+.groicon {
+    background-color: #eba921;
+    border-color: #2b231c;
+}
+
+.ghoicon {
+    background-color: #c281fe;
+    border-color: #0b0046;
+}
+
+.firicon {
+    background-color: #fcc60a;
+    border-color: #971300;
+}
+
+.graicon {
+    background-color: #27ff09;
+    border-color: #0b6600;
+}
+
+.eleicon {
+    background-color: #fffc91;
+    border-color: #818400;
+}
+
+.psyicon {
+    background-color: #ba82ff;
+    border-color: #c900d9;
+}
+
+.iceicon {
+    background-color: #c4fffc;
+    border-color: #00aeae;
+}
+
+.draicon {
+    background-color: #fc7801;
+    border-color: #6b3901;
+}
+
+.daricon {
+    background-color: #aeaeae;
+    border-color: #000000;
+}
+
+.faiicon {
+    background-color: #ffe6e6;
+    border-color: #f259ff;
+}
+
+.steicon {
+    background-color: #96adfe;
+    border-color: #233e70;
+}
+
+.noricon {
+    background-color: #ffffff;
+    border-color: #555555;
+}
+
+.poiicon {
+    background-color: #cfff11;
+    border-color: #680077;
+}

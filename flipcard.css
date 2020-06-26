@@ -1,0 +1,79 @@
+.flipimg {
+    display: block;
+    max-height: 400px;
+    max-width: 400px;
+    height: 400px;
+    width: 400px;
+    background-color: #cfe969;
+}
+
+.flipdiv {
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    z-index: 0;
+    position: absolute;
+}
+
+.zdex {
+    z-index: 2;
+    position: relative;
+}
+
+.introdiv {
+    padding: 0 0 0 -250px;
+    margin: 0 0 0 250px;
+}
+
+
+/*Flipcard*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 3000px;
+    padding: 100px -200px -100px -400px;
+    margin: -100px 50px -75px -100px;
+}
+
+.flip-card-inner {
+    position: relative;
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    transition: transform 10s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(1080deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: transparent;
+}
+
+.flip-card-back {
+    background-color: #cfe969;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    bottom: 2px;
+}
+
+.flip-card-front:hover {
+    display: none;
+}
+
+.flip-card-back:hover {
+    background-color: transparent;
+}
