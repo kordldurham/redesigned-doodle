@@ -65,13 +65,8 @@
     bottom: 2px;
 }
 
-.flip-card-front:hover {
-    display: none;
-}
-
-.flip-card-back:hover {
-    background-color: transparent;
-}
+/* Never hide a face or switch backgrounds on hover: both cause a flash
+   when the pointer crosses a rotating 3D card. */
 /* Keep the animated Shuckle inside the introduction's layout instead of
    absolutely positioning it over the "To top" anchor below the section. */
 .shuckle-intro-layout {
@@ -108,8 +103,11 @@
 .shuckle-intro-layout .flip-card-back {
     bottom: auto;
 }
-.shuckle-intro-layout .flip-card-front:hover {
-    display: block;
+.shuckle-intro-layout .flip-card-front,
+.shuckle-intro-layout .flip-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 .shuckle-intro-layout .introdiv {
     flex: 1 1 280px;
